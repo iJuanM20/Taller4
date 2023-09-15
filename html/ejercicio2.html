@@ -14,47 +14,50 @@
         <fieldset>
 
             User id:
-            <input type="text" pattern="" autofocus><br><br>
+            <input type="text" pattern=".{5,12}" required autofocus><br><br>
 
             Password:
-            <input type="text"><br><br>
+            <input type="password" pattern=".{7,12}" required> <br><br>
 
             Name:
-            <input type="text" pattern=""><br><br>
+            <input type="text" pattern="[A-Za-z]+" required><br><br>
 
             Address:
             <input type="text" pattern=""><br><br>
 
             Country:
-            <input type=""><br><br>
+            <select name="Country" required>
+                <option value="select">select Country</option>
+                <option value="colombia">Colombia</option>
+                <option value="Estados Unidos">Estados Unidos</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Panamá">Panamá</option>
+
+            </select><br><br>
 
             Zip Code:
-            <input type="text"><br><br>
+            <input type="text" required><br><br>
 
             Email:
-            <input type="text"><br><br>
+            <input type="email" required><br><br>
 
             Sex:
-            <input type="radio" name="Sex">Male
-            <input type="radio" name="Sex">Female <br><br>
+            <input type="radio" name="Sex" readonly>Male
+            <input type="radio" name="Sex" required>Female <br><br>
 
             Lenguage: 
-            <input type="checkbox" name="Lenguage">English
-            <input type="checkbox" name="Lenguage"> Non English  <br><br>
+            <input type="checkbox" name="Lenguage" required>English
+            <input type="checkbox" name="Lenguage" required> Non English  <br><br>
 
-            About:<textarea cols="" rows=""></textarea><br><br>
+            About:  <br> <textarea cols="50" rows="10"></textarea ><br><br> 
             
 
+            <center><input type="submit" value="Submit"></center>
 
+        </fieldset>
 
-            
-
-
-
-
-            <input type="submit" value="Submit"><br>
-
-        </fieldset><br>
+        
 
 
 
