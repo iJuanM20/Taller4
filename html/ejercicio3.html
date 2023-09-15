@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejemplo Formulario #3</title>
 </head>
 <body>
 
@@ -16,34 +16,54 @@
         <td><input type="radio">Individual <br> <input type="radio">Entity</td>
     </table>
     <br>
-    First Name: <input type="text"> <br><br>
+    First Name: <input type="text" pattern="(Mr|Ms|Mrs) [A-Z]{1}[a-z]{1 }[A-Za-z]*" placeholder="Mr|Ms|Mrs nombre">  <br><br>
+
     Middle Name or Initial: <input type="text"><br><br>
-    Last Name: <input type="text"> <br><br>
+
+    Last Name: <input type="text" pattern="[A-Z]{1}[a-z]{1}*"> <br><br>
     
-    Suffix: <select> 
+    Suffix: <select>
+        <option value="">- -</option> 
         <option value="">Mr</option>
         <option value="">Mrs</option>
         <option value="">Ms</option>
     </select> <br><br>
-    Taxpayer Identification Number: <input type="number" style="width: 50px;"> - <input type="number" style="width: 50px;"> - <input type="number" style="width: 50px;"> <br><br>
-    date of birth: <input type="date"> <br><br>
-    street address: <input type="text"> <br> 
-    <input type="text"><br><input type="text"><br><br>
-    city: <input type="text"><br><br>
 
-    state: <select> 
-        <option value="">departamentos</option>
-    </select> <br><br>
+    Taxpayer Identification Number: <input type="number" style="width: 35px;"> - <input type="number" style="width: 30px;"> - <input type="number" style="width: 40px;"> <br><br>
 
-    zip code: <input type="number" style="width: 50px;"> - <input type="number" style="width: 50px;"> <br><br>
-    home phone:  (<input type="number" style="width: 50px;">) <input type="number" style="width: 50px;"> - <input type="number" style="width: 50px;"> <br><br>
-    driver's license/state ID number: <input type="text"> <br><br>
-    
-    issuing state: <select>
+    Date Of Birth: <input type="number" style="width: 30px;"> - <input type="number" style="width: 30px;"> - <input type="number" style="width: 50px;"> (MM-DD-YYYY)<br><br>
+
+    <table>
+        <td style="vertical-align: top;">
+            Street Address:
+        </td>
+        <td>
+            <input type="text" style="width: 400px;"><br> 
+            <input type="text" style="width: 400px;"><br>
+            <input type="text" style="width: 400px;">
+        </td>
+    </table><br><br>
+     
+
+    City: <input type="text"><br><br>
+
+    State: <select> 
         <option value="">- -</option>
     </select> <br><br>
 
-    expiration date: <input type="date">
+    Zip Code: <input type="number" style="width: 50px;"> - <input type="number" style="width: 33px;"> (Plus Four - Optional) <br><br>
+
+    Home Phone:  (<input type="number" style="width: 30px;">) <input type="number" style="width: 30px;"> - <input type="number" style="width: 45px;"> <br><br>
+
+    Driver's License/State ID Number: <input type="text" style="width: 200px;"> <br><br>
+    
+    Issuing State: <select>
+        <option value="">- -</option>
+    </select> <br><br>
+
+    Expiration Date: <input type="number" style="width: 30px;"> - <input type="number" style="width: 30px;"> - <input type="number" style="width: 50px;"> (MM-DD-YYYY) <br><br>
+
+    <input type="submit">
 
 </form>
     
